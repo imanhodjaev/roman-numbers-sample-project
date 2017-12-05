@@ -22,6 +22,10 @@ If you installed tox then just run
 
 `$ tox`
 
+Or use pytest to tun tests
+
+`$ pytest`
+
 
 ### Input constraints
 
