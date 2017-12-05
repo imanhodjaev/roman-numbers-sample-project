@@ -59,6 +59,35 @@ Task itself consists of:
    number of roman literals to render.
 
 
+### Usage
+
+#### From command line
+
+
+First you need to install it using
+
+`$ python setup.py install`
+
+```sh
+roman_numerals --help                                               ᴦ/P/ roman-numerals ≡ MASTER
+usage: roman_numerals [-h] [-n NUMBER]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -n NUMBER, --number NUMBER
+                        Number to convert to roman representation
+```
+
+
+#### As a utility
+
+```py
+import roman_numerals
+
+roman_numerals.convert(400)
+```
+
+
 ### Commit message format
 
 For commit messages I used [Karma](http://karma-runner.github.io/1.0/dev/git-commit-msg.html)

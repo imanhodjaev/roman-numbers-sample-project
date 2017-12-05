@@ -3,3 +3,4 @@ venv/
 .cache/
 .tox/
 roman_numerals.egg-info/
+dist/

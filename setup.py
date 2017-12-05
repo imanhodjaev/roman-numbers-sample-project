@@ -34,6 +34,10 @@ setup(
 
     py_modules=[NAME],
 
+    entry_points={
+         'console_scripts': ['roman_numerals=roman_numerals:main'],
+    },
+
     include_package_data=True,
     license='MIT',
     classifiers=[

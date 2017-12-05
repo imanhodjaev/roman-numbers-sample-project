@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import argparse
+
 from collections import OrderedDict
 
 __all__ = ['convert']
@@ -39,3 +41,17 @@ def check_input(number: int):
 
     if number <= 0:
         raise ValueError('Input number must be positive integer')
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-n', '--number', type=int, help='Number to convert to roman representation')
+
+    args = parser.parse_args()
+
+    if args.number:
+        print(convert(int(args.number)))
+
+
+if __name__ == '__main__':
+    main()
