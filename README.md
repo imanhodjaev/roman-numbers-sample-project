@@ -9,7 +9,9 @@ Solution does not cover large roman numeric systems like
 
 ### Installing
 
-Solution works with Python 3.
+Solution works with Python 3, since Python 2.x support will be
+dropped by 2020 it is better to write new projects on the latest
+version of Python.
 
 Please install all requirements (only `tox` to run tests)
 
@@ -85,6 +87,8 @@ optional arguments:
 import roman_numerals
 
 roman_numerals.convert(400)
+
+>>> CD
 ```
 
 
@@ -92,3 +96,9 @@ roman_numerals.convert(400)
 
 For commit messages I used [Karma](http://karma-runner.github.io/1.0/dev/git-commit-msg.html)
 commit message style with some slight modifications.
+
+### Why there are no doctests
+
+I could write doc tests but at the same time they might make source code
+harder to follow, this is not the case with small tasks but if there are
+huge amounts of source code in a single files it is better
