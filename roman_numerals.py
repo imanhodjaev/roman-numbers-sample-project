@@ -47,7 +47,7 @@ def convert(number: int) -> str:
     return result
 
 
-def check_input(number: int):
+def check_input(number: int) -> None:
     """Checks validity of a given input and fails if input is malformed
 
     :param number: int
