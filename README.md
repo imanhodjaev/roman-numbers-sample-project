@@ -6,6 +6,7 @@
 Solution does not cover large roman numeric systems like
 `Apostrophus`, and `Vinculum` and fractions.
 
+
 ### Installing
 
 Solution works with Python 3.
@@ -13,6 +14,7 @@ Solution works with Python 3.
 Please install all requirements (only `tox` to run tests)
 
 `$ pip install requirements.txt`
+
 
 ### Running tests
 
@@ -25,6 +27,7 @@ If you installed tox then just run
 
 1. Input number has to be positive,
 2. Input number has to be integer
+
 
 ### Approach
 
@@ -46,3 +49,9 @@ Task itself consists of:
 2. Mapping must have descending order so the greater values go first,
 3. By iteratively dividing number by the number from table we get the
    number of roman literals to render.
+
+
+### Commit message format
+
+For commit messages I used [Karma](http://karma-runner.github.io/1.0/dev/git-commit-msg.html)
+commit message style with some slight modifications.
