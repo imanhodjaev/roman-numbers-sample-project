@@ -3,8 +3,11 @@ import argparse
 
 from collections import OrderedDict
 
-__all__ = ['convert']
 
+# We just want to export entry point and converter
+__all__ = ['convert', 'main']
+
+# Define mapping of known numbers to roman values
 PAIRS = OrderedDict({
     1000: 'M',
     900: 'CM',
@@ -36,6 +39,7 @@ def convert(number: int) -> str:
 
 
 def check_input(number: int):
+    """Checks validity of a given input and fails if input is malformed"""
     if type(number) != int:
         raise ValueError('Input number must be integer')
 
