@@ -31,7 +31,11 @@ PAIRS = OrderedDict({
 
 
 def convert(number: int) -> str:
-    """Convert decimal (arabic) numbers to roman numerals"""
+    """Convert decimal (arabic) numbers to roman numerals
+
+    :param number: int
+    :return: Decimal number converted to Roman representation
+    """
     check_input(number)
     result = ''
 
@@ -44,7 +48,11 @@ def convert(number: int) -> str:
 
 
 def check_input(number: int):
-    """Checks validity of a given input and fails if input is malformed"""
+    """Checks validity of a given input and fails if input is malformed
+
+    :param number: int
+    :return: None
+    """
     if type(number) != int:
         raise ValueError('Input number must be integer')
 
