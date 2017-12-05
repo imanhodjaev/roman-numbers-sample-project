@@ -41,9 +41,13 @@ We will use the following table to convert number to roman
 |--------|-----|-----|------|-------|-------|-------|-------|
 | Value  |  1  |  5  |  10  |   50  |  100  |  500  | 1000  |
 
-Though we could have extended this table with literals
-like `IV=4` and `IX=9` I think it is better to keep it
-this way because Roman numerals just use them for convenience.
+And we will have extended mapping for the values like
+
+| Symbol |  IV  |  XL  |  9   |  XC   |   CD   |   CM   |
+|--------|------|------|------|-------|--------|--------|
+| Value  |  4   |  40  |  IX  |  90   |   400  |  900   |
+
+
 Also [Wiki](https://en.wikipedia.org/wiki/Roman_numerals) has
 this table in the introduction section.
 
