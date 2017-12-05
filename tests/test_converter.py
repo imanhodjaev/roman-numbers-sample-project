@@ -52,3 +52,4 @@ def test_it_work_with_other_numbers():
     assert convert(717) == 'DCCXVII'
     assert convert(777) == 'DCCLXXVII'
     assert convert(888) == 'DCCCLXXXVIII'
+    assert convert(36) == 'XXXVI'
