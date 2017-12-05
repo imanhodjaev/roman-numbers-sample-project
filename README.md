@@ -6,10 +6,19 @@
 Solution does not cover large roman numeric systems like
 `Apostrophus`, and `Vinculum` and fractions.
 
-### Python requirements
+### Installing
 
 Solution works with Python 3.
-No external dependencies.
+
+Please install all requirements (only `tox` to run tests)
+
+`$ pip install requirements.txt`
+
+### Running tests
+
+If you installed tox then just run
+
+`$ tox`
 
 
 ### Input constraints
@@ -31,5 +40,9 @@ this way because Roman numerals just use them for convenience.
 Also [Wiki](https://en.wikipedia.org/wiki/Roman_numerals) has
 this table in the introduction section.
 
-Task itself consists of making a mapping between roman literals
-and respective decimal value.
+Task itself consists of:
+
+1. Making a mapping between roman literals and respective decimal values,
+2. Mapping must have descending order so the greater values go first,
+3. By iteratively dividing number by the number from table we get the
+   number of roman literals to render.
