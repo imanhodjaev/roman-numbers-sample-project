@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+
+"""This package provides utility function to convert decimal (Arabic)
+numbers to Roman numerals.
+"""
+
 import argparse
 
 from collections import OrderedDict
