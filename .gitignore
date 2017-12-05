@@ -4,4 +4,4 @@ venv/
 .tox/
 roman_numerals.egg-info/
 dist/
-.bundle
+*.bundle
